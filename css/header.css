@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap");
+.header {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  background: rgba(98, 82, 176, 0.47);
+  position: fixed;
+  z-index: 1000;
+  left: -100%;
+  transition: all 0.3s linear;
+}
+.header__inner {
+  width: max-content;
+  height: 100vh;
+  background: #FEDE77;
+  border-radius: 0 28px 28px 0;
+  padding: 16px 24px 29px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.header__inner-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+.header__inner-column-circle {
+  text-decoration: none;
+  margin: 0 0 23px 0;
+  transition: all 0.3s linear;
+}
+.header__inner-column-circle path {
+  transition: all 0.3s linear;
+}
+.header__inner-column-circle:hover path {
+  fill: #fff;
+}
+.header__inner-column-circle:last-child {
+  margin: 0;
+}
+.header__inner-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__inner-nav-logo {
+  margin: 10px 0 34px 0;
+  cursor: pointer;
+}
+.header__inner-nav-logo line {
+  transition: all 0.3s linear;
+}
+.header__inner-nav-logo svg {
+  transition: all 0.3s linear;
+}
+.header__inner-nav-logo:hover line {
+  stroke: #F2A661;
+}
+.header__inner-nav-logo:hover svg {
+  transform: rotate(90deg);
+}
+.header__inner-nav-link {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.14em;
+  margin: 0 0 21px 0;
+  border-bottom: 3px solid #FEDE77;
+  transition: all 0.3s linear;
+  padding: 0 0 3.5px 0;
+}
+.header__inner-nav-link:hover {
+  border-bottom: 3px solid #EF5F5F;
+}
+.header__inner-nav-link:last-child {
+  margin: 0;
+}
+
+/*BURGER*/
+.main__header {
+  padding: 38px 0 0 0;
+}
+.main__header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__header-inner a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  position: relative;
+  color: #425154;
+}
+.main__header-inner a p {
+  margin: 0 6px 0 0;
+}
+.main__header-inner a svg {
+  transition: all 0.3s linear;
+}
+.main__header-inner a rect {
+  transition: all 0.3s linear;
+}
+.main__header-inner a path {
+  transition: all 0.3s linear;
+}
+.main__header-inner a line {
+  transition: all 0.3s linear;
+}
+.main__header-inner a:hover rect {
+  stroke: #F2A661;
+}
+.main__header-inner a:hover path {
+  stroke: #F2A661;
+}
+.main__header-inner a:hover line {
+  stroke: #F2A661;
+}
+.main__header-menu {
+  background: none;
+  transform: scale(1);
+  transition: all 0.3s linear;
+}
+.main__header-menu.white__menu span {
+  background: #fff;
+}
+.main__header-menu span {
+  display: block;
+  height: 6px;
+  background: #000;
+  border-radius: 100px;
+  margin: 0 0 7px 0;
+  transition: all 0.3s linear;
+}
+.main__header-menu span:first-child {
+  width: 35px;
+}
+.main__header-menu span:nth-child(2) {
+  width: 45px;
+}
+.main__header-menu span:last-child {
+  width: 25px;
+  margin: 0;
+}
+.main__header-menu:hover span:first-child {
+  width: 45px;
+  background: #F2A661;
+}
+.main__header-menu:hover span:nth-child(2) {
+  width: 55px;
+  background: #F2A661;
+}
+.main__header-menu:hover span:last-child {
+  width: 35px;
+  background: #F2A661;
+}
+
+/*# sourceMappingURL=header.css.map */

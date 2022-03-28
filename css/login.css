@@ -1,0 +1,339 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+}
+.login__inner {
+  width: 690px;
+  height: 795px;
+  border-radius: 20px;
+  padding: 80px 133px;
+  background: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.login__inner-close {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.login__inner-close line {
+  transition: all 0.3s linear;
+}
+.login__inner-close svg {
+  transition: all 0.3s linear;
+}
+.login__inner-close:hover line {
+  stroke: #F2A661;
+}
+.login__inner-close:hover svg {
+  transform: rotate(90deg);
+}
+.login__inner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+.login__inner-info-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 23px 0;
+}
+.login__inner-info-img {
+  margin: 0 0 81px 0;
+}
+.login__inner-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.login__inner-nav-info {
+  margin: 0 0 26px 0;
+  transition: all 0.3s linear;
+}
+.login__inner-nav-info p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: #693900;
+}
+.login__inner-nav-btn {
+  width: 368px;
+  padding: 17px 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  background: #FB8349;
+  border-radius: 14px;
+  margin: 0 auto 11px auto;
+  transition: all 0.3s linear;
+  color: #fff;
+}
+.login__inner-nav-btn:last-child {
+  margin: 0;
+  background: #FD659D;
+}
+.login__inner-nav-btn:hover {
+  background: #FFB800;
+  color: rgba(75, 0, 0, 0.92);
+}
+.login__inner-autorization {
+  top: 55%;
+  right: -150%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translate(50%, 0);
+  transition: all 0.3s linear;
+}
+.login__inner-autorization-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A73C01;
+  margin: 13px 0 0 0;
+  transition: all 0.3s linear;
+}
+.login__inner-autorization-link:hover {
+  color: #6220A5;
+}
+.login__inner-autorization-message {
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  color: crimson;
+}
+.login__inner-autorization-btn {
+  background: #FB8349;
+}
+.login__inner-registration {
+  transition: all 0.3s linear;
+}
+.login__inner-registration-step {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55%;
+  right: -150%;
+  transform: translate(50%, 0);
+  transition: all 0.3s linear;
+}
+.login__inner-registration-message {
+  width: 350px;
+  margin: 30px 0 0 0;
+  font-size: 18px;
+  border: 5px solid #70B052;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 30px;
+}
+.login__inner-registration-btn {
+  background: #FD659D;
+}
+.login__inner-email {
+  position: relative;
+  transition: all 0.3s linear;
+}
+.login__inner-email p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  padding: 10px 15px;
+  background: darkred;
+  color: #fff;
+  opacity: 0;
+}
+.login__inner-pass {
+  height: 55px;
+  position: relative;
+  margin: 0 0 48px 0;
+  transition: all 0.3s linear;
+}
+.login__inner-pass p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 14px;
+  padding: 10px 15px;
+  background: darkred;
+  color: #fff;
+  opacity: 0;
+}
+.login__inner-back {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 65%;
+  right: -100%;
+  transition: all 0.3s linear;
+}
+.login__inner-back line {
+  transition: all 0.3s linear;
+}
+.login__inner-back svg {
+  transition: all 0.3s linear;
+}
+.login__inner-back:hover line {
+  stroke: #F2A661;
+}
+.login__inner-back:hover svg {
+  transform: rotate(90deg);
+}
+.login__inner-recovery {
+  width: 320px;
+  top: 55%;
+  right: -150%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translate(50%, 0);
+  transition: all 0.3s linear;
+}
+.login__inner-recovery > p {
+  font-family: "Ubuntu", sans-serif;
+  width: 300px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #693900;
+  margin: 0 0 27px 0;
+}
+.login__inner-recovery label {
+  font-family: "Ubuntu", sans-serif;
+}
+.login__inner-recovery button {
+  font-family: "Ubuntu", sans-serif;
+  margin: 21px 0 0 0;
+  background: #E5841D;
+}
+.login__inner-confirm {
+  top: 55%;
+  right: -150%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(50%, 0);
+  transition: all 0.3s linear;
+}
+.login__inner-confirm a {
+  margin: 31px 0 0 0;
+  height: 56px;
+}
+.login__inner-confirm p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: rgba(105, 57, 0, 0.92);
+}
+.login__inner-confirm p span {
+  color: #FD659D;
+}
+
+.eye__pass {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.eye__pass img {
+  width: 20px;
+  height: 20px;
+}
+
+.confirm-btn {
+  background: #FB8349;
+}
+
+.open {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.label__field {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  line-height: 17px;
+  margin: 0 0 4px 0;
+  transition: all 0.3s linear;
+  color: #693900;
+}
+
+.input__field {
+  width: 320px;
+  height: 55px;
+  padding: 0 10px;
+  background: rgba(196, 196, 196, 0.65);
+  border-radius: 14px;
+  font-size: 20px;
+  margin: 0 0 27px 0;
+  transition: all 0.3s linear;
+  background: #F4D1BC;
+}
+
+.sbmt-btn {
+  width: 320px;
+  padding: 17px 0;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.sbmt-btn:hover {
+  background: #FFB800;
+  color: #4B0000;
+}
+
+.reg__second {
+  right: -100%;
+  transition: all 0.3s linear;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,76 @@
+.exit__modal {
+  position: fixed;
+  top: -150%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  z-index: 10000;
+}
+
+.exit__inner {
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.exit__inner-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 107px 97.5px;
+}
+.exit__inner-column p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #693900;
+  margin: 0 0 25px 0;
+}
+.exit__inner-column button {
+  width: 367px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  background: #FD659D;
+  border-radius: 14px;
+  display: block;
+  padding: 17px 0;
+  margin: 0 0 11px 0;
+  transition: all 0.3s linear;
+}
+.exit__inner-column button:last-child {
+  margin: 0;
+  background: #FFC0A2;
+}
+.exit__inner-column button:hover {
+  background: #FFB800;
+  color: #4B0000;
+}
+
+.exit-close {
+  position: absolute;
+  right: 18px;
+  top: 24px;
+  cursor: pointer;
+}
+.exit-close line {
+  transition: all 0.3s linear;
+}
+.exit-close svg {
+  transition: all 0.3s linear;
+}
+.exit-close:hover line {
+  stroke: #F2A661;
+}
+.exit-close:hover svg {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=exitModal.css.map */
